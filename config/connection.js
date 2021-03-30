@@ -8,10 +8,10 @@ var connection = mysql.createConnection({
   database: "burgers_db"
 });
 
-connection.connect(function(err) {
+connection.connect(function(err, connect) {
   if (err) {
-    console.error("error connecting: " + err.stack);
-    return;
+    console.error("error connecting: ");
+    connect.end()
   }
 });
 

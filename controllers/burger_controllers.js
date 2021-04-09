@@ -7,14 +7,14 @@ var router = express.Router();
 router.get("/", (req, res) => {
   burger.selectAll(function(data) {
     var hbsObject = {
-      burgers: data
+      burger: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
   
-// POST route for saving a new todo. You can create a todo using the data on req.body
+// POST route for saving a new list. You can create a burger using the data on req.body
 router.post("/api/burgers", (req, res) => {
   burger.insertOne([
     "burger name", "devoured"

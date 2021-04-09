@@ -16,8 +16,8 @@ Objective of this assignment was to utilized the MVC (Model Views Controller) mo
 - then run `npm start`
 - open your web browser to the localhost port
 
-## Select the Deployed link below
-
+## Deployed Link
+Deployed link malfunctioning
 
 ## Screenshots
 
